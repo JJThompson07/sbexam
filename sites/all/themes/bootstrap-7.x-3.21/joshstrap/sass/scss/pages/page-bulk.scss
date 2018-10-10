@@ -1,0 +1,108 @@
+.page-node {
+	color: $text-color;
+
+	a {
+		color: $base-blue;
+	}
+
+  // left hand sidebar
+  .region-sidebar-first {
+    background: rgba($light-blue, 0.5);
+    border: 0;
+
+    .block-search {
+      input,
+      .btn {
+        border-color: $dark-blue;
+      }
+      .btn-primary {
+        background-color: $base-blue;
+      }
+    }
+
+    h2 {
+      color: $text-color;
+    }
+
+    .nav a,
+    .more-link a {
+      display: block;
+      color: $base-blue;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        background-color: transparent;
+        background-image: linear-gradient(to right, $dark-blue , rgba($light-blue, 0.75), rgba($light-blue, 0.0));
+        color: $white;
+      }
+    }
+
+    .more-link a {
+      padding: 0.3rem 0.5rem 0.2rem;
+    }
+
+    ul:not(.nav) {
+      padding-left: 0;
+
+      li {
+        list-style: none;
+        padding-left: 1.5rem;
+        padding: 0.3rem 0.5rem 0.2rem 1.5rem; 
+
+        &:hover ,
+        &:focus {
+          background-color: transparent;
+          background-image: linear-gradient(to right, $dark-blue , rgba($light-blue, 0.75), rgba($light-blue, 0.0));
+
+          a {
+            color: $white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  // Main content
+  .main-container {
+    background: $white;
+
+    header {
+      .lead {
+        font-weight: bold;
+        font-size: 32px;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+        text-transform: capitalize;
+        color: $dark-blue;
+        background: $light-grey;
+        padding: 2rem 2rem 1rem;
+        border-bottom: solid 10px $white;
+        box-shadow: 0 10px 0 0 $dark-grey;
+      }
+    }
+  }
+
+  // right hand sidebar
+  .region-sidebar-second {
+    .block {
+      padding: 1.9rem;
+      background: rgba($light-red, 0.5);
+      border-radius: 5px;
+      margin-bottom: 10px;
+
+      a {
+        color: $base-red;
+        display: block;
+        padding: 0.3rem 0.5rem 0.2rem;
+
+        &:hover,
+        &:focus {
+          color: $white;
+          background-image: linear-gradient(to right, $dark-red , rgba($light-red, 0.75), rgba($light-red, 0.0));
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

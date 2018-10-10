@@ -1,0 +1,50 @@
+.node-football-team.node-teaser {
+	background: $base-stone;
+	padding: 1rem 2rem;
+	margin-bottom: 1rem;
+  border-radius: 5px;
+  border-top: 1rem solid light-red;
+
+	.submitted {
+		display: none;
+	}
+
+	h2 {
+		a {
+			color: $text-color;
+		}
+	}
+
+  .field-name-field-team-badge {
+    margin-bottom: 2rem;
+  }
+
+  .links {
+    li {
+      width: calc(50% - 10px);
+
+      a {
+        display: block;
+        padding: 0.3rem 0.5rem 0.2rem;
+        color: $dark-stone;
+        &:hover,
+        &:focus {
+          color: white;
+          background: transparent;
+          text-decoration: none;
+          background-image: linear-gradient(to right, $dark-stone , rgba($base-stone, 0.75), rgba($base-stone, 0.0));
+        }
+      }
+    }
+    .comment-add {
+      text-align: right;
+
+      a {
+        &:hover,
+        &:focus {
+          background-image: linear-gradient(to left, $dark-stone , rgba($base-stone, 0.75) 60%, rgba($base-stone, 0.0));
+        }
+      }
+    }
+  }
+}

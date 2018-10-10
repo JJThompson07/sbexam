@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         },
         // The files to compile. This is in the format DESTINATION.CSS:SOURCE.SCSS
         files: {
-          '<%= paths.css %>/style.css' : '<%= paths.scss %>/style.scss',
+          '<%= paths.css %>/styles.css' : '<%= paths.scss %>/styles.scss',
         }
       },
       // Production target
@@ -70,9 +70,11 @@ module.exports = function(grunt) {
       },
       dev: {
         // The files to compile. This is in the format DESTINATION.CSS:SOURCE.SCSS
-        files: {
-          '<%= paths.css %>/style.css' : '<%= paths.css %>/style.css'
-        }
+        files: [
+          {
+            src: '<%= paths.css %>/styles.css'
+          },
+        ]
       }
     },
 

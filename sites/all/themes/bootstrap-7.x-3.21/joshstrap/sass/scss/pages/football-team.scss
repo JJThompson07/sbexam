@@ -1,0 +1,89 @@
+.node-football-team:not(.node-teaser) {
+
+  .submitted {
+    display: block;
+    padding: 1rem 2rem;
+    color: $white;
+
+    a {
+      color: $white;
+    }
+
+    &:hover {
+      background-color: $light-blue;
+
+      a {
+        color: $base-blue;
+      }
+    }
+  }
+
+	.field-name-field-team-badge {
+    margin-bottom: 2rem;
+
+    .field-item {
+      text-align: center;
+    }
+
+    .img-responsive {
+      margin: 0 auto;
+    }
+  }
+
+  .field-name-field-league,
+  .field-name-field-country {
+    background-color: $base-stone;
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 2rem;
+    width: calc(50%);
+    margin-bottom: 2rem;
+
+    .field-items {
+      display: block;
+      float: none;
+    }
+
+    .field-items {
+      a {
+        display: block;
+        color: $dark-stone;
+        font-size: $font-size-large;
+        font-weight: bold;
+        padding: 0.3rem 0.5rem 0.2rem;
+
+        &:hover,
+        &:focus {
+          color: $white;
+          text-decoration: none;
+          background-image: linear-gradient(to right, $dark-stone , rgba($base-stone, 0.75) 85%, rgba($base-stone, 0.0));
+
+        }
+      }
+    }
+  }
+
+  .field-name-body {
+    padding: 1rem 1rem 4rem 0;
+  }
+
+  .field-name-field-team-link {
+    text-align: right;
+
+    a {
+      padding: 1rem 2rem;
+      font-size: $font-size-large;
+      font-weight: bold;
+      background-color: $base-blue;
+      border: solid 2px $light-blue;
+      border-radius: 5px;
+      color: $white;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        background-color: $dark-blue; 
+      }
+    }
+  }
+}

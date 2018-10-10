@@ -2,7 +2,16 @@
 @import 'default-variables';
 
 // Bootstrap Framework.
-@import '../bootstrap/assets/stylesheets/bootstrap';
+@import '../assets/stylesheets/bootstrap';
 
 // Base-theme overrides.
 @import 'overrides';
+
+
+// partials
+@import 'partials/variables';
+
+// pages
+@import 'pages/page-bulk';
+@import 'pages/football-team';
+@import 'pages/football-team-teaser';

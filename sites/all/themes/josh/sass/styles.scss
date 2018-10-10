@@ -21,6 +21,10 @@
 // Component classes can override these styles, but if no class applies a style
 // to an HTML element, these styles will be the ones displayed.
 //
+
+// Site specific variables, mixins and global animations
+@import "partials/variables";
+
 // Style guide: base
 
 // Ensure fonts get loaded first to minimize front-end performance impact.
@@ -37,6 +41,12 @@
 @import 'layouts/layout-3col/layout-3col';
 @import 'layouts/layout-center/layout-center';
 @import 'layouts/layout-swap/layout-swap';
+@import 'layouts/layout-swap/layout-swap';
+@import 'layouts/main-page';
+
+// new pages
+@import 'pages/football-team';
+@import 'pages/football-team-teaser';
 
 // Components
 //
