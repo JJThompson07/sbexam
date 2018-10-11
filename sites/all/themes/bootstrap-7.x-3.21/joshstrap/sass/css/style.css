@@ -6657,7 +6657,7 @@ a .glyphicon.icon-after {
       width: 150px;
       width: 15rem; }
       .page-football-teams .view-football-teams .view-filters .views-reset-button .btn:hover, .page-football-teams .view-football-teams .view-filters .views-reset-button .btn:focus {
-        background: #7f776a;
+        background-image: linear-gradient(to right, #7f776a, rgba(255, 239, 213, 0.75) 75%, rgba(255, 239, 213, 0));
         color: #ffffff; }
 
 .page-football-teams .view-football-teams .view-content {

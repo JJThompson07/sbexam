@@ -47,10 +47,10 @@
           font-weight: bold;
           padding: 1rem 2rem;
           width: 15rem;
-
+          
           &:hover,
           &:focus {
-            background: $dark-stone;
+            background-image: linear-gradient(to right, $dark-stone , rgba($base-stone, 0.75) 75%, rgba($base-stone, 0.0));
             color: $white;
           }
         }
