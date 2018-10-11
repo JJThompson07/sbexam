@@ -1,4 +1,4 @@
-.page-node {
+[class*="page-"] {
 	color: $text-color;
 
 	a {
@@ -26,15 +26,7 @@
 
     .nav a,
     .more-link a {
-      display: block;
-      color: $base-blue;
-      &:hover,
-      &:focus {
-        text-decoration: none;
-        background-color: transparent;
-        background-image: linear-gradient(to right, $dark-blue , rgba($light-blue, 0.75), rgba($light-blue, 0.0));
-        color: $white;
-      }
+      @include link($base-blue, $dark-blue, $light-blue);
     }
 
     .more-link a {
@@ -47,7 +39,8 @@
       li {
         list-style: none;
         padding-left: 1.5rem;
-        padding: 0.3rem 0.5rem 0.2rem 1.5rem; 
+        padding: 0.3rem 0.5rem 0.2rem 1.5rem;
+        border-bottom: solid 1px $white;
 
         &:hover ,
         &:focus {
@@ -92,16 +85,33 @@
       margin-bottom: 10px;
 
       a {
-        color: $base-red;
-        display: block;
         padding: 0.3rem 0.5rem 0.2rem;
+        @include link($base-red, $dark-red, $light-red);
+      }
+    }
+  }
 
-        &:hover,
-        &:focus {
-          color: $white;
-          background-image: linear-gradient(to right, $dark-red , rgba($light-red, 0.75), rgba($light-red, 0.0));
-          text-decoration: none;
-        }
+  .footer {
+    background: $light-grey;
+    width: 100%;
+    @media (min-width: $screen-sm-min) {
+      padding: 3.5rem calc(50% - 375px) 3.6rem;
+    }
+    @media (min-width: $screen-md-min) {
+      padding: 3.5rem calc(50% - 485px) 3.6rem;
+    }
+    @media (min-width: $screen-lg-min) {
+      padding: 3.5rem calc(50% - 585px) 3.6rem;
+    }
+    
+
+    .region-footer {
+      display: flex;
+      flex-flow: row no-wrap;
+      justify-content: space-evenly;
+
+      .block {
+        flex-basis: 30%;
       }
     }
   }

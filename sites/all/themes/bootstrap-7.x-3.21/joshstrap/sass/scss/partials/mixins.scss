@@ -1,0 +1,14 @@
+@mixin link($text-colour, $dark-colour, $light-colour, $percent: 50%) {
+  color: $text-colour;
+  display: block;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background: transparent;
+    color: $white;
+    background-image: -webkit-linear-gradient(to right, $dark-colour, rgba($light-colour, 0.75) $percent, rgba($light-colour, 0.0));
+    background-image: -o-linear-gradient(to right, $dark-colour, rgba($light-colour, 0.75) $percent, rgba($light-colour, 0.0));
+    background-image: linear-gradient(to right, $dark-colour, rgba($light-colour, 0.75) $percent, rgba($light-colour, 0.0));
+  }
+}

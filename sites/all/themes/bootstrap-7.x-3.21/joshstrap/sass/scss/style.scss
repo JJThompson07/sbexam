@@ -9,9 +9,14 @@
 
 
 // partials
+@import 'partials/mixins';
 @import 'partials/variables';
 
 // pages
 @import 'pages/page-bulk';
 @import 'pages/football-team';
 @import 'pages/football-team-teaser';
+@import 'pages/taxonomy-views';
+
+// views
+@import 'views/football-teams-view';

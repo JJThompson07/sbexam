@@ -6383,51 +6383,52 @@ a .glyphicon.icon-after {
   margin-left: .25em;
   margin-right: -.25em; }
 
-.page-node {
+[class*="page-"] {
   color: #181818; }
-  .page-node a {
+  [class*="page-"] a {
     color: #2b6cc4; }
-  .page-node .region-sidebar-first {
+  [class*="page-"] .region-sidebar-first {
     background: rgba(153, 189, 228, 0.5);
     border: 0; }
-    .page-node .region-sidebar-first .block-search input,
-    .page-node .region-sidebar-first .block-search .btn {
+    [class*="page-"] .region-sidebar-first .block-search input,
+    [class*="page-"] .region-sidebar-first .block-search .btn {
       border-color: #183059; }
-    .page-node .region-sidebar-first .block-search .btn-primary {
+    [class*="page-"] .region-sidebar-first .block-search .btn-primary {
       background-color: #2b6cc4; }
-    .page-node .region-sidebar-first h2 {
+    [class*="page-"] .region-sidebar-first h2 {
       color: #181818; }
-    .page-node .region-sidebar-first .nav a,
-    .page-node .region-sidebar-first .more-link a {
-      display: block;
-      color: #2b6cc4; }
-      .page-node .region-sidebar-first .nav a:hover, .page-node .region-sidebar-first .nav a:focus,
-      .page-node .region-sidebar-first .more-link a:hover,
-      .page-node .region-sidebar-first .more-link a:focus {
+    [class*="page-"] .region-sidebar-first .nav a,
+    [class*="page-"] .region-sidebar-first .more-link a {
+      color: #2b6cc4;
+      display: block; }
+      [class*="page-"] .region-sidebar-first .nav a:hover, [class*="page-"] .region-sidebar-first .nav a:focus,
+      [class*="page-"] .region-sidebar-first .more-link a:hover,
+      [class*="page-"] .region-sidebar-first .more-link a:focus {
         text-decoration: none;
-        background-color: transparent;
-        background-image: linear-gradient(to right, #183059, rgba(153, 189, 228, 0.75), rgba(153, 189, 228, 0));
-        color: #ffffff; }
-    .page-node .region-sidebar-first .more-link a {
+        background: transparent;
+        color: #ffffff;
+        background-image: linear-gradient(to right, #183059, rgba(153, 189, 228, 0.75) 50%, rgba(153, 189, 228, 0)); }
+    [class*="page-"] .region-sidebar-first .more-link a {
       padding: 3px 5px 2px;
       padding: 0.3rem 0.5rem 0.2rem; }
-    .page-node .region-sidebar-first ul:not(.nav) {
+    [class*="page-"] .region-sidebar-first ul:not(.nav) {
       padding-left: 0; }
-      .page-node .region-sidebar-first ul:not(.nav) li {
+      [class*="page-"] .region-sidebar-first ul:not(.nav) li {
         list-style: none;
         padding-left: 15px;
         padding-left: 1.5rem;
         padding: 3px 5px 2px 15px;
-        padding: 0.3rem 0.5rem 0.2rem 1.5rem; }
-        .page-node .region-sidebar-first ul:not(.nav) li:hover, .page-node .region-sidebar-first ul:not(.nav) li:focus {
+        padding: 0.3rem 0.5rem 0.2rem 1.5rem;
+        border-bottom: solid 1px #ffffff; }
+        [class*="page-"] .region-sidebar-first ul:not(.nav) li:hover, [class*="page-"] .region-sidebar-first ul:not(.nav) li:focus {
           background-color: transparent;
           background-image: linear-gradient(to right, #183059, rgba(153, 189, 228, 0.75), rgba(153, 189, 228, 0)); }
-          .page-node .region-sidebar-first ul:not(.nav) li:hover a, .page-node .region-sidebar-first ul:not(.nav) li:focus a {
+          [class*="page-"] .region-sidebar-first ul:not(.nav) li:hover a, [class*="page-"] .region-sidebar-first ul:not(.nav) li:focus a {
             color: #ffffff;
             text-decoration: none; }
-  .page-node .main-container {
+  [class*="page-"] .main-container {
     background: #ffffff; }
-    .page-node .main-container header .lead {
+    [class*="page-"] .main-container header .lead {
       font-weight: bold;
       font-size: 32px;
       margin-bottom: 40px;
@@ -6441,21 +6442,44 @@ a .glyphicon.icon-after {
       padding: 2rem 2rem 1rem;
       border-bottom: solid 10px #ffffff;
       box-shadow: 0 10px 0 0 #626161; }
-  .page-node .region-sidebar-second .block {
+  [class*="page-"] .region-sidebar-second .block {
     padding: 19px;
     padding: 1.9rem;
     background: rgba(247, 156, 163, 0.5);
     border-radius: 5px;
     margin-bottom: 10px; }
-    .page-node .region-sidebar-second .block a {
-      color: #f03a47;
-      display: block;
+    [class*="page-"] .region-sidebar-second .block a {
       padding: 3px 5px 2px;
-      padding: 0.3rem 0.5rem 0.2rem; }
-      .page-node .region-sidebar-second .block a:hover, .page-node .region-sidebar-second .block a:focus {
+      padding: 0.3rem 0.5rem 0.2rem;
+      color: #f03a47;
+      display: block; }
+      [class*="page-"] .region-sidebar-second .block a:hover, [class*="page-"] .region-sidebar-second .block a:focus {
+        text-decoration: none;
+        background: transparent;
         color: #ffffff;
-        background-image: linear-gradient(to right, #af5b5b, rgba(247, 156, 163, 0.75), rgba(247, 156, 163, 0));
-        text-decoration: none; }
+        background-image: linear-gradient(to right, #af5b5b, rgba(247, 156, 163, 0.75) 50%, rgba(247, 156, 163, 0)); }
+  [class*="page-"] .footer {
+    background: #f6f4f3;
+    width: 100%; }
+    @media (min-width: 768px) {
+      [class*="page-"] .footer {
+        padding: 3.5rem calc(50% - 375px) 3.6rem; } }
+    @media (min-width: 992px) {
+      [class*="page-"] .footer {
+        padding: 3.5rem calc(50% - 485px) 3.6rem; } }
+    @media (min-width: 1200px) {
+      [class*="page-"] .footer {
+        padding: 3.5rem calc(50% - 585px) 3.6rem; } }
+    [class*="page-"] .footer .region-footer {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row no-wrap;
+          flex-flow: row no-wrap;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+      [class*="page-"] .footer .region-footer .block {
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%; }
 
 .node-football-team:not(.node-teaser) .submitted {
   display: block;
@@ -6557,4 +6581,132 @@ a .glyphicon.icon-after {
     text-align: right; }
     .node-football-team.node-teaser .links .comment-add a:hover, .node-football-team.node-teaser .links .comment-add a:focus {
       background-image: linear-gradient(to left, #7f776a, rgba(255, 239, 213, 0.75) 60%, rgba(255, 239, 213, 0)); }
+
+.region-content .view-leagues .view-content .views-row,
+.region-content .view-countries .view-content .views-row {
+  background: #ffefd5;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  padding: 20px 20px;
+  padding: 2rem 2rem; }
+  .region-content .view-leagues .view-content .views-row a,
+  .region-content .view-countries .view-content .views-row a {
+    padding: 3px 5px 2px;
+    padding: 0.3rem 0.5rem 0.2rem;
+    color: #7f776a;
+    display: block; }
+    .region-content .view-leagues .view-content .views-row a:hover, .region-content .view-leagues .view-content .views-row a:focus,
+    .region-content .view-countries .view-content .views-row a:hover,
+    .region-content .view-countries .view-content .views-row a:focus {
+      text-decoration: none;
+      background: transparent;
+      color: #ffffff;
+      background-image: linear-gradient(to right, #7f776a, rgba(255, 239, 213, 0.75) 50%, rgba(255, 239, 213, 0)); }
+
+.page-football-teams .view-football-teams .view-filters {
+  position: relative; }
+  .page-football-teams .view-football-teams .view-filters .views-exposed-widget {
+    float: none; }
+    .page-football-teams .view-football-teams .view-filters .views-exposed-widget > label {
+      font-size: 28px; }
+    .page-football-teams .view-football-teams .view-filters .views-exposed-widget .bef-select-as-links > .form-item {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+      .page-football-teams .view-football-teams .view-filters .views-exposed-widget .bef-select-as-links > .form-item .form-group {
+        -ms-flex-preferred-size: 150px;
+            flex-basis: 150px;
+        -ms-flex-preferred-size: 15rem;
+            flex-basis: 15rem;
+        text-align: center;
+        background: rgba(247, 156, 163, 0.5);
+        margin: 10px auto;
+        margin: 1rem auto;
+        border-radius: 0.5rem; }
+        .page-football-teams .view-football-teams .view-filters .views-exposed-widget .bef-select-as-links > .form-item .form-group a {
+          color: #af5b5b;
+          display: block;
+          padding: 10px 20px;
+          padding: 1rem 2rem;
+          font-weight: bold;
+          border-radius: 0.5rem; }
+          .page-football-teams .view-football-teams .view-filters .views-exposed-widget .bef-select-as-links > .form-item .form-group a:hover, .page-football-teams .view-football-teams .view-filters .views-exposed-widget .bef-select-as-links > .form-item .form-group a:focus {
+            text-decoration: none;
+            background: transparent;
+            color: #ffffff;
+            background-image: linear-gradient(to right, #af5b5b, rgba(247, 156, 163, 0.75) 50%, rgba(247, 156, 163, 0)); }
+  .page-football-teams .view-football-teams .view-filters .views-reset-button {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    padding: 0; }
+    .page-football-teams .view-football-teams .view-filters .views-reset-button .btn {
+      margin: 0;
+      background: #ffefd5;
+      color: #7f776a;
+      border: 0;
+      font-weight: bold;
+      padding: 10px 20px;
+      padding: 1rem 2rem;
+      width: 150px;
+      width: 15rem; }
+      .page-football-teams .view-football-teams .view-filters .views-reset-button .btn:hover, .page-football-teams .view-football-teams .view-filters .views-reset-button .btn:focus {
+        background: #7f776a;
+        color: #ffffff; }
+
+.page-football-teams .view-football-teams .view-content {
+  margin-top: 40px;
+  margin-top: 4rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .page-football-teams .view-football-teams .view-content h3 {
+    display: block;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 0 5px;
+    padding: 0 0.5rem; }
+    .page-football-teams .view-football-teams .view-content h3 a {
+      color: #183059;
+      display: block;
+      padding: 10px 20px;
+      padding: 1rem 2rem;
+      font-weight: bold; }
+      .page-football-teams .view-football-teams .view-content h3 a:hover, .page-football-teams .view-football-teams .view-content h3 a:focus {
+        text-decoration: none;
+        background: transparent;
+        color: #ffffff;
+        background-image: linear-gradient(to right, #183059, rgba(153, 189, 228, 0.75) 50%, rgba(153, 189, 228, 0)); }
+  .page-football-teams .view-football-teams .view-content .football-teams--team {
+    -ms-flex-preferred-size: calc(33% - 1rem);
+        flex-basis: calc(33% - 1rem);
+    margin: 5px;
+    margin: 0.5rem;
+    padding: 10px;
+    padding: 1rem;
+    text-align: center;
+    background-color: #ffefd5;
+    border-radius: 5px; }
+    .page-football-teams .view-football-teams .view-content .football-teams--team .views-field-title a {
+      padding: 3px 5px 2px;
+      padding: 0.3rem 0.5rem 0.2rem;
+      color: #7f776a;
+      display: block;
+      margin-bottom: 10px;
+      margin-bottom: 1rem;
+      font-weight: bold; }
+      .page-football-teams .view-football-teams .view-content .football-teams--team .views-field-title a:hover, .page-football-teams .view-football-teams .view-content .football-teams--team .views-field-title a:focus {
+        text-decoration: none;
+        background: transparent;
+        color: #ffffff;
+        background-image: linear-gradient(to right, #7f776a, rgba(255, 239, 213, 0.75) 85%, rgba(255, 239, 213, 0)); }
+    .page-football-teams .view-football-teams .view-content .football-teams--team .views-field-field-team-badge img {
+      margin: 0 auto; }
 /*# sourceMappingURL=style.css.map */

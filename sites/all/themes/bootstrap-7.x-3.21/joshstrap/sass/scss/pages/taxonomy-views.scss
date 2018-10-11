@@ -1,0 +1,18 @@
+.region-content {
+  .view-leagues,
+  .view-countries {
+  	.view-content {
+      .views-row {
+        background: $base-stone;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        padding: 2rem 2rem;
+
+        a {
+          padding: 0.3rem 0.5rem 0.2rem;
+          @include link($dark-stone, $dark-stone, $base-stone);
+        }
+      }
+    }
+  }
+}

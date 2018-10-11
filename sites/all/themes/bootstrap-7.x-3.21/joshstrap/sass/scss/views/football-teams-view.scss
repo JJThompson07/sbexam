@@ -1,0 +1,101 @@
+.page-football-teams {
+	.view-football-teams {
+    // filters
+    .view-filters {
+      position: relative;
+      
+      .views-exposed-widget {
+        float: none;
+
+        &> label {
+          font-size: $font-size-heading-small;
+        }
+        .bef-select-as-links > .form-item {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+
+          .form-group {
+            flex-basis: 15rem;
+            text-align: center;
+            background: rgba($light-red, 0.5);
+            margin: 1rem auto;
+            border-radius: 0.5rem;
+
+            a {
+              @include link($dark-red, $dark-red, $light-red);
+              padding:  1rem 2rem;
+              font-weight: bold;
+              border-radius: 0.5rem;
+            }
+          }
+        }
+
+      }
+      .views-reset-button {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding: 0;
+
+        .btn {
+          margin: 0;
+          background: $base-stone;
+          color: $dark-stone;
+          border: 0;
+          font-weight: bold;
+          padding: 1rem 2rem;
+          width: 15rem;
+
+          &:hover,
+          &:focus {
+            background: $dark-stone;
+            color: $white;
+          }
+        }
+      }
+    }
+    // main view content
+    .view-content {
+      margin-top: 4rem;
+      display: flex;
+      flex-wrap: wrap;
+
+      h3 {
+        display: block;
+        flex-basis: 100%;
+        padding: 0 0.5rem;
+
+        a {
+          @include link($dark-blue, $dark-blue, $light-blue);
+          padding:  1rem 2rem;
+          font-weight: bold;
+        }
+      }
+
+      .football-teams--team {
+        flex-basis: calc(33% - 1rem);
+        margin: 0.5rem;
+        padding: 1rem;
+        text-align: center;
+        background-color: $base-stone;
+        border-radius: 5px;
+
+        .views-field-title {
+          a {
+            padding: 0.3rem 0.5rem 0.2rem;
+            @include link($dark-stone, $dark-stone, $base-stone, 85%);
+            margin-bottom: 1rem;
+            font-weight: bold;
+          }
+        }
+        .views-field-field-team-badge {
+          img {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
